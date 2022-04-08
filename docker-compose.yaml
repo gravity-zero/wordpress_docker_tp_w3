@@ -14,8 +14,8 @@ services:
         image: 'mariadb'
         restart: always
         environment:
-            MYSQL_DATABASE: marmischlag
-            MYSQL_ROOT_PASSWORD: admin
+            MYSQL_DATABASE: groupe4
+            MYSQL_ROOT_PASSWORD: 12345
         volumes:
             # Pour lancer un dump automatiquement au montage du conteneur
             - ./database/dump.sql:/docker-entrypoint-initdb.d/dump.sql
